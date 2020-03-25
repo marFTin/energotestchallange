@@ -136,12 +136,13 @@ Message Types:
 * sqlite 2.8.17
 
 ### Procedure
-1. git submodule init
-2. git submodule update
-3. cmake <path_to_build_output>
+1. cd <path_to_sources_root>
+2. git submodule init
+3. git submodule update
 4. cd <path_to_build_output>
-5. make
-6. ctest -V -R unit.
+5. cmake <path_to_sources_root>
+6. make
+7. ctest -V -R Unit.
 
 ## Installation
 After build procedure
@@ -163,7 +164,10 @@ After build procedure
 3. sudo make uninstall
 4. sudo systemctl daemon-reload
 
-### Unresolved problems
+# Possible extensions
+The project was designed in modular fashion. Communications transport and application layers are separated and connects each other with abstract interfaces. Handshake mechanism is also separated by abstract interfaces. It means that it is possible to implement complicated handshake mechanism ( with authentication and authorization ) without changes in the rest of communication libraries. Similar situation is with EventsStorage, which is now implemented on SQLLite, but it can be easy changed to any other kind storage without affects rest of design. To save time for development this small project I resigned from configuration of server addresses, ports etc. (all this are hardcoded in include/Configuration/Defines.h), but system may be extended for configurator. 
+
+# Unresolved problems
 1. Lack of 'NOK' message when SendNewEvent may cause situation when event will be saved
 but client may consider it as not saved
 2. Lack of 'no messages' answer for SavedEventsRequest force application to wait 1s in case
