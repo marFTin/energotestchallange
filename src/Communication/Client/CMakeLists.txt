@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.10.3)
+
+ADD_SUBDIRECTORY(TransportConnectivityManager)
+ADD_SUBDIRECTORY(ProtocolExecutor)
+ADD_SUBDIRECTORY(Handshake)

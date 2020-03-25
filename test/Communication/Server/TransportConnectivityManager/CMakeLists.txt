@@ -1,0 +1,4 @@
+cmake_minimum_required(VERSION 3.10.3)
+
+ADD_SUBDIRECTORY(TcpTransportConnectivityManager)
+ADD_SUBDIRECTORY(TcpTransportConnection)

@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.10.3)
+
+SET( SOURCES HandshakeV1.cpp )
+
+SET( PROJECT_ID Server.HandshakeV1 )
+
+ADD_LIBRARY(${PROJECT_ID} SHARED ${SOURCES})
+
+TARGET_LINK_LIBRARIES(${PROJECT_ID} Lib.PacketCoderV1 stdc++fs)
+
+INSTALL( TARGETS ${PROJECT_ID} LIBRARY DESTINATION /usr/lib)

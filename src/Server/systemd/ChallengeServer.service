@@ -1,0 +1,18 @@
+[Unit]
+Description=ChallengeServer
+
+[Service]
+Type=simple
+User=root
+ExecStartPre=
+ExecStart=/usr/local/bin/challenge.server
+WorkingDirectory=/usr/local/bin/
+TimeoutStopSec=300
+ExecStop=
+
+# By default in case of failure it restarts service 5 times within 10s, then leave it turned off
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
+

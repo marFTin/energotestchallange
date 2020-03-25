@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.10.3)
+
+ADD_SUBDIRECTORY(Application)
+ADD_SUBDIRECTORY(EventsStorage)
+ADD_SUBDIRECTORY(Communication)
+ADD_SUBDIRECTORY(Lib)
+ADD_SUBDIRECTORY(Server)
