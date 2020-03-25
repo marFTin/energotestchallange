@@ -39,6 +39,7 @@ System is simple, so I decided to do not include C1 (system level) diagram
 |     16b |    16b |
 |--------:|-------:|
 | Length | Version |
+
 Header shape is decisive for all further versions of protocol - every protocol packet
 shall start with the header. It contains version number and total packet length (includes the header)
 #### Protocol Version 1
@@ -47,6 +48,7 @@ Each message in version 1 started with this header
 |     32b |    8b |
 |--------:|-------:|
 | Common Header | Message Type |
+
 Message Types:
 * 0 = HANDSHAKE_INVITE
 * 1 = ACK
