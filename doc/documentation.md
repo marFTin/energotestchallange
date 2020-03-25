@@ -131,10 +131,10 @@ Message Types:
 
 ## Build
 ### Requirement
-* Program was compiled and tested on Linux 16.04.1-Ubuntu
-* gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3~16.04.1)
+* Program was compiled and tested on Linux 16.04.1-Ubuntu and Ubuntu 18.04.3 LTS
+* gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3~16.04.1) and 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04)
 * If you would like to use other compilers: C++17 support is obligatory
-* Qt version 5.5.1
+* Qt version 5.5.1 and 5.9.5
 * sqlite 2.8.17
 
 ### Procedure
