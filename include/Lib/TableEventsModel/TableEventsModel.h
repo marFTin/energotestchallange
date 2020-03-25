@@ -7,6 +7,7 @@
 #include <cinttypes>
 #include <memory>
 #include <unordered_map>
+#include <optional>
 
 namespace Challenge {
 

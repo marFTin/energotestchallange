@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.10.3)
+cmake_minimum_required(VERSION 3.10.2)
 
 ADD_SUBDIRECTORY(Application)
 ADD_SUBDIRECTORY(EventsStorage)

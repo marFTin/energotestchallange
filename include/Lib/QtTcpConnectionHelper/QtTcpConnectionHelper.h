@@ -9,6 +9,8 @@
 
 #include <functional>
 #include <mutex>
+#include <cstddef>
+#include <optional>
 
 namespace Challenge {
 

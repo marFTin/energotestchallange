@@ -1,6 +1,6 @@
-cmake_minimum_required(VERSION 3.10.3)
+cmake_minimum_required(VERSION 3.10.2)
 
-cmake_minimum_required(VERSION 3.10.3)
+cmake_minimum_required(VERSION 3.10.2)
 
 SET ( TEST_ID Test.Lib.PacketCoderV1 )
 
