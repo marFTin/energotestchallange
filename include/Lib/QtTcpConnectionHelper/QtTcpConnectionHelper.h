@@ -44,7 +44,7 @@ namespace Challenge {
                 QByteArray m_rawDataFromSocket;
 
                 std::mutex m_rawDataMutex;
-                std::mutex m_callbacksMutex;
+                std::recursive_mutex m_callbacksMutex;
             };
 
 } // namespace Challenge
